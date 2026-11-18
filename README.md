@@ -77,6 +77,23 @@ Two limits worth memorising: at most **3 submissions per UTC day** per competiti
 repository checks count towards it; only a quota refusal itself is free), and a hard cap of **20 entries
 per competition**. Spend them like they matter, because near a deadline they do.
 
+## Three mistakes that cost real entries
+
+Everything above is distilled from these, which we paid for in fees, quota and one lost prize shot:
+
+1. **Building first, checking the recording second.** Our frontend entry was built under the strict
+   transcript recording — or so we thought. It was submitted in time and then rejected with
+   `thinking_reproduces` at 0.0%: the recording had captured none of the authorship. The entry fee was
+   gone and the deadline had passed, so there was no second attempt. Verify the mechanism end to end on
+   a throwaway file *before* the real build, every time.
+2. **Treating submissions as free retries.** They are not. A server refusal for repository formalities
+   still consumed one of our three daily submissions on a news-image bounty, and by the time a better
+   version of the entry was ready the same evening, the quota was full and the improved version had to
+   wait for the next UTC day. Run the local check first; it is the same gate, minus the cost.
+3. **Assuming a good entry beats the formalities.** Badges, license, About topics — none of them make
+   your work better, and all of them can keep it from being read at all. Do them first, while they are
+   cheap, not in a panic at the deadline.
+
 ## Choosing what to enter
 
 Our standing order, which has served us well: biggest prize first, then free entries, then the easiest
